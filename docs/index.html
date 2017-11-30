@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="title" >Quantizer</title>
+    <meta name="description" content="Quality Game with name">
+    <meta name="keywords" content="Game, qualities, Abilities, Name">
+    
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+<script type="text/javascript">
+function valid(id)
+{
+    var textVal=document.getElementById(id).value;
+    if (!textVal.match(/\S/)) 
+    {
+        return false;
+    } 
+    else 
+    {
+        return true;
+    }
+ }
+
+function getname(){
+	var check = valid('getName');			
+	if(check){	
+		var q =["Inventive","Exciting","Thoughtful","Powerful","Practical","Proactive","Productive",'Professional','Meticulous','Quick','Balanced','Achiever','Knowledgeable','Leader','Diplomatic','Logical','Initiator','Original','Outgoing','Particular','Patient','Active','Positive','Consistent','Compassionate','Incredible','Independent','Precise','Mediator','Emotional','Cheerful','Forgiving','Responsive','Candid','Industrious','Cooperative']; 
+				var range = q.length;
+				var choice = (q[Math.floor(Math.random() * range)]);
+				document.getElementById('test1').textContent = String(choice);
+				document.getElementById('getName').value="";	
+	}
+	else{
+		alert("Field is blank");
+	}
+}
+</script>
+
+  <body>
+
+<!-- Facebook SDK -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '184082892172337',
+      xfbml      : true,
+      version    : 'v2.11'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Facebook SDK -->
+
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Qualitizer</span></a>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="probootstrap-hero prohttp://localhost/probootstrap/frame/#featuresbootstrap-slant" style="background-image: url(img/image_1.jpg);" data-section="home" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row intro-text">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h1 class="probootstrap-heading probootstrap-animate" id="test1">QUALITIZER</h1>
+	    <h1 class="probootstrap-heading probootstrap-animate" id="test"></h1>
+            <div class="probootstrap-subheading center">
+              <p class="probootstrap-animate">
+
+<form>
+<span class="navbar-brand">Enter your name</span>
+<input class="form-control" type="text" id="getName" />
+<input class="btn btn-default smoothscroll" type="button" value="Find Quality" onclick="getname()"/>
+</form>
+
+
+		</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Google Map -->
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="js/google-map.js"></script> -->
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+  </body>
+</html>
