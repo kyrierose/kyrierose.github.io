@@ -29,7 +29,7 @@
 function valid(id)
 {
     var textVal=document.getElementById(id).value;
-    if (!textVal.match(/\S/)) 
+    if (!textVal.match(/\S/) || (textVal.match(/[A-Z][a-z]/) == -1) 
     {
         return false;
     } 
