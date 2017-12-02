@@ -16,6 +16,7 @@
 	  
 	  
     <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -47,6 +48,7 @@ function getname(){
 				var choice = (q[Math.floor(Math.random() * range)]);
 				document.getElementById('test1').textContent = String(choice);
 				document.getElementById('test1').style.color="#FFE800";
+				document.getElementById('test1').classList.addClass("animated rubberBand");
 				document.getElementById('getName').value="";	
 	}
 	else{
