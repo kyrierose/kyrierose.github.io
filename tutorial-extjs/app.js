@@ -6,7 +6,7 @@
 
           xtype: 'grid',
 
-          title: 'Tutorial List',
+          title: 'Tutorials List',
 
           columns: [
 
