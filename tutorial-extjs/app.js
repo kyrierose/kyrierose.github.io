@@ -1,7 +1,7 @@
 Ext.application({
         
         launch: function(){
-        
+        alert();
                 Ext.create('Ext.data.Store', {
     storeId: 'simpsonsStore',
     fields:[ 'name', 'email', 'phone'],
