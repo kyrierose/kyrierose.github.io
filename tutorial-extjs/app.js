@@ -6,15 +6,13 @@
 
           xtype: 'grid',
 
-          title: 'Users',
+          title: 'Tutorial List',
 
           columns: [
 
-            {text: 'Name', width: 100, dataIndex: 'name'},
-
-            {text: 'Email Address', flex: 1, dataIndex: 'email'},
-
-            {text: 'Phone Number', width: 200, dataIndex: 'phone'}
+            {text: 'S.No', flex: 1, dataIndex: 'sno'},  
+              
+            {text: 'Name', width: 500, dataIndex: 'name'}
 
           ],
 
@@ -22,7 +20,7 @@
 
           listeners: {
 
-            select: onSelect
+            click: onClick
 
          }
 
@@ -34,13 +32,11 @@
 
      
 
-    function onSelect(sender, record) {
+    function onClick(sender, record) {
 
       var r = record[0].data;
 
-      var text = r.name+' - '+r.email+' - '+r.phone;
-
-      alert(text);
+      alert(r.link);
 
     };
 
@@ -48,12 +44,6 @@
 
     var data = [
 
-      { name: 'Lisa', email: 'lisa@simpsons.com', phone: '555-111-1224' },
-
-      { name: 'Bart', email: 'bart@simpsons.com', phone: '555-222-1234' },
-
-      { name: 'Homer', email: 'homer@simpsons.com', phone: '555-222-1244' },
-
-      { name: 'Marge', email: 'marge@simpsons.com', phone: '555-222-1254' }
+      { sno:'1', name: 'What is Ext.js?', link:'./what-is-extjs' }
 
     ]
