@@ -2,7 +2,7 @@ Ext.application({
         
         launch: function(){
         
-                Ext.require([
+Ext.require([
     'Ext.grid.*',
     'Ext.data.*',
     'Ext.panel.*',
