@@ -70,7 +70,7 @@ Ext.application({
     Ext.create('Ext.Panel', {
         renderTo: 'binding-example',
         frame: true,
-        title: 'Book List',
+        title: 'Book-List',
         width: 580,
         height: 400,
         layout: 'border',
