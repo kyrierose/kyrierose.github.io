@@ -1,4 +1,3 @@
-Ext.application({
 
         Ext.require([
     'Ext.data.*',
@@ -79,6 +78,4 @@ Ext.onReady(function(){
             }
         })
     });
-});
-      
 });
