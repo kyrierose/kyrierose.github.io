@@ -10,9 +10,9 @@
 
           columns: [
 
-            {text: 'S.No', flex: 1, dataIndex: 'sno'},  
+            {text: 'S.No', width: 50, dataIndex: 'sno'},  
               
-            {text: 'Name', width: 500, dataIndex: 'name'}
+            {text: 'Name', width: '100%', dataIndex: 'name'}
 
           ],
 
@@ -32,11 +32,9 @@
 
      
 
-    function onClick(sender, record) {
+    function onClick() {
 
-      var r = record[0].data;
-
-      alert(r.link);
+      alert("Something");
 
     };
 
