@@ -99,7 +99,7 @@ Ext.application({
         handler: function(widget, event) {
             var rec = grid.getSelectionModel().getSelection()[0];
             if (rec) {
-                Ext.example.msg('Buy', 'Buy ' + rec.get('company'));
+                Ext.example.msg('Buy1', 'Buy ' + rec.get('company'));
             }
         }
     });
