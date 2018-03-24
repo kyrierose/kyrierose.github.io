@@ -21,7 +21,7 @@ Ext.application({
                     width: 400,
                     renderTo: Ext.getBody()
                 });
-                
+            alert();    
         }
 });
         
