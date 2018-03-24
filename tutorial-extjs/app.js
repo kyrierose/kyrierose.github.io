@@ -18,6 +18,12 @@ Ext.onReady(function(){
                     style: 'margin:0 auto;',
                     height: 700,
                     align: 'center',
+                    listeners: {
+                        itemclick: function(dv, record, item, index, e) {
+                                var selectedRec = dv.getSelectionModel().getSelected();          
+                                alert(selectedRec.get('name')); //Will display text of name column of selected record
+                        }
+                    },
                     width: "50%",
                     renderTo: Ext.getBody()
                 });
