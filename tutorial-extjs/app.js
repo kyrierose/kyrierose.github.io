@@ -20,7 +20,7 @@ Ext.onReady(function(){
                     align: 'center',
                     listeners: {
                         itemclick: function(dv, record, item, index, e) {
-                                var selectedRec = dv.getSelectionModel().getSelected()[0];          
+                                var selectedRec = dv.getSelectionModel().getSelected()[];          
                                 alert(selectedRec.get('link'));
                                 alert(selectedRec.get('Link'));//Will display text of name column of selected record
                                 
