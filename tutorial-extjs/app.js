@@ -1,5 +1,5 @@
 Ext.onReady(function(){
-        Ext.create('Ext.data.Store', {
+        var mainStore = Ext.create('Ext.data.Store', {
                     storeId: 'tutorials',
                     fields:[ 'S.No','Title', 'Link'],
                     data: [
@@ -9,7 +9,7 @@ Ext.onReady(function(){
 
                 Ext.create('Ext.grid.Panel', {
                     title: 'Extjs Tutorials',
-                    store: Ext.data.StoreManager.lookup('tutorials'),
+                    store: mainStore,
                     columns: [
                         { text: 'S.No', dataIndex: 'no' },
                         { text: 'Name', dataIndex: 'name' },
