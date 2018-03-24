@@ -17,7 +17,8 @@ Ext.onReady(function(){
                     ],
                     style: 'margin:0 auto;',
                     height: 700,
-                    width: "100%",
+                    align: center,
+                    width: "70%",
                     renderTo: Ext.getBody()
                 });
 });
