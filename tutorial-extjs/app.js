@@ -3,7 +3,7 @@ Ext.onReady(function(){
                     storeId: 'tutorials',
                     fields:[ 'S.No','Title', 'Link'],
                     data: [
-                        { no:'1', title: 'What is Ext.js?', link: 'http://kyrierose.github.io/updated'}
+                        { no:'1', title: 'What is Ext.js?', link: 'http://kyrierose.github.io/'}
                     ]
             });
 
@@ -20,7 +20,7 @@ Ext.onReady(function(){
                     align: 'center',
                     listeners: {
                         itemclick: function(dv, record, item, index, e) {
-                                var selectedRec = dv.getSelectionModel().getSelected()[];          
+                                var selectedRec = dv.getSelectionModel().getSelected();          
                                 alert(selectedRec.get('link'));
                                 alert(selectedRec.get('Link'));//Will display text of name column of selected record
                                 
