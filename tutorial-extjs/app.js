@@ -3,7 +3,7 @@ Ext.onReady(function(){
                     storeId: 'tutorials',
                     fields:[ 'S.No','Title', 'Link'],
                     data: [
-                        { no:'1', name: 'What is Ext.JS?', link: 'http://kyrierose.github.io'}
+                        { no:'1', name: 'What is Ext.JS?', link: 'http://kyrierose.github.io/'}
                     ]
             });
 
