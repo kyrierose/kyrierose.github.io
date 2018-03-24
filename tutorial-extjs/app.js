@@ -12,8 +12,8 @@ Ext.onReady(function(){
                     store: mainStore,
                     columns: [
                         { text: 'S.No', dataIndex: 'no' },
-                        { text: 'Name', dataIndex: 'name', flex: 1 },
-                        { text: 'Link', dataIndex: 'link' },
+                        { text: 'Name', dataIndex: 'name', flex: 1, width:200 },
+                        { text: 'Link', dataIndex: 'link' , width: 200},
                     ],
                     style: 'margin:0 auto;',
                     height: 700,
