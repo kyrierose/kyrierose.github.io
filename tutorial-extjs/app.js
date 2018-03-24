@@ -15,8 +15,8 @@ Ext.onReady(function(){
                         { text: 'Name', dataIndex: 'name' },
                         { text: 'Link', dataIndex: 'link' },
                     ],
-                    height: 200,
-                    width: 400,
+                    height: 700,
+                    width: "100%",
                     renderTo: Ext.getBody()
                 });
 });
