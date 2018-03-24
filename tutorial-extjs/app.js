@@ -20,9 +20,16 @@ Ext.onReady(function(){
                     align: 'center',
                     listeners: {
                         itemclick: function(dv, record, item, index, e) {
-                                var selectedRec = dv.getSelectionModel().getSelected();          
+                                var selectedRec = dv.getSelectionModel().getSelected()[0];          
                                 alert(selectedRec.get('link'));
                                 alert(selectedRec.get('Link'));//Will display text of name column of selected record
+                                
+                                var row = dv.store.indexOf(selectedRec);
+                                var gridstore = dv.getStore();
+                                var rowdata = gridstore.data.items[row];
+                                alert(rowdata.data['title']);
+                                alert(rowdata.data['link']);
+                                alert(rowdata.data['Link']);
                         }
                     },
                     width: "50%",
