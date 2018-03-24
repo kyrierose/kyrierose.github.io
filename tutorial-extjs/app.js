@@ -12,7 +12,7 @@ Ext.onReady(function(){
                     store: mainStore,
                     columns: [
                         { text: 'S.No', dataIndex: 'no' },
-                        { text: 'Name', dataIndex: 'name' },
+                        { text: 'Name', dataIndex: 'name', flex: 1 },
                         { text: 'Link', dataIndex: 'link' },
                     ],
                     style: 'margin:0 auto;',
