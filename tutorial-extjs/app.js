@@ -1,7 +1,10 @@
 Ext.application({
         
         launch: function(){
-            Ext.create('Ext.data.Store', {
+            alert("Working");    
+
+                
+                Ext.create('Ext.data.Store', {
                     storeId: 'tutorials',
                     fields:[ 'S.No','Title', 'Link'],
                     data: [
@@ -21,7 +24,6 @@ Ext.application({
                     width: 400,
                     renderTo: Ext.getBody()
                 });
-            alert();    
         }
 });
         
