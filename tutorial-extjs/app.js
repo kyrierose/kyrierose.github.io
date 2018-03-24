@@ -5,7 +5,7 @@ Ext.application({
                     storeId: 'tutorials',
                     fields:[ 'S.No','Title', 'Link'],
                     data: [
-                        { no:'1', name: 'What is Ext.JS?', link: ''}
+                        { no:'1', name: 'What is Ext.JS?', link: 'http://kyrierose.github.io'}
                     ]
             });
 
