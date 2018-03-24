@@ -15,6 +15,7 @@ Ext.onReady(function(){
                         { text: 'Name', dataIndex: 'name' },
                         { text: 'Link', dataIndex: 'link' },
                     ],
+                    style: 'margin:0 auto;margin-top:100px;',
                     height: 700,
                     width: "100%",
                     renderTo: Ext.getBody()
