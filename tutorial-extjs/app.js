@@ -7,13 +7,13 @@ Ext.onReady(function(){
                     ]
             });
 
-                Ext.create('Ext.grid.Panel', {
+             var pi = Ext.create('Ext.grid.Panel', {
                     title: 'Extjs Tutorials',
                     store: mainStore,
                     columns: [
                         { text: 'S.No', dataIndex: 'no' },
                         { text: 'Title', dataIndex: 'title', width:200 },
-                        { text: 'Link', dataIndex: 'link' , width: 200},
+                        { text: 'Link', dataIndex: 'link' , width: 300},
                     ],
                     style: 'margin:0 auto;',
                     height: 700,
@@ -33,7 +33,7 @@ Ext.onReady(function(){
                                 }
                         }
                     },
-                    width: "50%",
+                    width: "60%",
                     renderTo: Ext.getBody()
                 });
 });
