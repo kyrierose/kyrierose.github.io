@@ -20,16 +20,17 @@ Ext.onReady(function(){
                     align: 'center',
                     listeners: {
                         itemclick: function(dv, record, item, index, e) {
-                                var selectedRec = dv.getSelectionModel().getSelected();          
-                                alert(selectedRec.get('link'));
-                                alert(selectedRec.get('Link'));//Will display text of name column of selected record
-                                
-                                var row = dv.store.indexOf(selectedRec);
-                                var gridstore = dv.getStore();
-                                var rowdata = gridstore.data.items[row];
-                                alert(rowdata.data['title']);
-                                alert(rowdata.data['link']);
-                                alert(rowdata.data['Link']);
+                                var selectedRecord = pi.getSelectionModel().getSelection()[0];
+                                if(selectedRecord === null)
+                                    alert("Select a tutorial.");
+                                else{
+                                    var row = pi.store.indexOf(selectedRecord);
+                                    var gridstore = pi.getStore();
+                                    var rowdata = gridstore.data.items[row];
+                                    
+                                    window.open(rowdata.data['link']);
+                                    
+                                }
                         }
                     },
                     width: "50%",
