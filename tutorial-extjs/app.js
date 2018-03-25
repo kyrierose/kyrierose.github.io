@@ -11,9 +11,9 @@ Ext.onReady(function(){
                     title: 'Extjs Tutorials',
                     store: mainStore,
                     columns: [
-                        { text: 'S.No', dataIndex: 'no' },
-                        { text: 'Title', dataIndex: 'title', width:200 },
-                        { text: 'Link', dataIndex: 'link' , width: 300},
+                        { text: 'S.No', dataIndex: 'no', flex: 1},
+                        { text: 'Title', dataIndex: 'title', flex: 5},
+                        { text: 'Link', dataIndex: 'link', flex: 8},
                     ],
                     style: 'margin:0 auto;',
                     height: 700,
