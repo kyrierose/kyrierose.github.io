@@ -1,9 +1,13 @@
 Ext.onReady(function(){
+        
+        alert("Select respective row for tutorial");
+        
         var mainStore = Ext.create('Ext.data.Store', {
                     storeId: 'tutorials',
                     fields:[ 'S.No','Title', 'Link'],
                     data: [
-                        { no:'1', title: 'What is Ext.js?', link: 'https://kyrierose.github.io/tutorial-extjs/contents/whatIsExtjs.html'}
+                        { no:'1', title: 'What is Ext.js?', link: 'https://kyrierose.github.io/tutorial-extjs/contents/whatIsExtjs.html'},
+                        { no:'2', title: 'Setting up Ext.js?', link: 'https://kyrierose.github.io/tutorial-extjs/contents/setupExtjs.html'}    
                     ]
             });
 
