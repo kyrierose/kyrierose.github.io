@@ -1,21 +1,5 @@
 Ext.onReady(function(){
         
-        Ext.create('Ext.window.Window',{
-                title:'Welcome to Ext.js tutorials',
-                width:300,
-                height:200,
-                draggable:false,
-                align:"center",
-                constrainTo:true,
-                closable:true,
-                items:[
-                        {
-                                xtype:'displayfield',
-                                value:'Click on row to open tutorial'
-                        }
-                ]
-        }).show();
-        
         var mainStore = Ext.create('Ext.data.Store', {
                     storeId: 'tutorials',
                     fields:[ 'S.No','Title', 'Link'],
